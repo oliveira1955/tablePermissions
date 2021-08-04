@@ -1,22 +1,21 @@
 import React from "react";
-import Header from "./layout/header/Header";
-import Student from "./Components/student/Student";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import AddStudent from "./Components/student/addstudent/AddStudent";
+
+import Header from "./layout/header/Header";
+import PermissionTable from "./components/PermissionTable";
 
 function App() {
   return (
-    <div>
-      <Router>
-        <Header />
-        <Switch>
-          <Route exact path="/" render={props => <Student />} />
-        </Switch>
-        <Switch>
-          <Route exact path="/add" render={props => <AddStudent />} />
-        </Switch>
-      </Router>
-    </div>
+    <Router>
+      <Header />
+      <Switch>
+        <Route
+          exact
+          path="/"
+          render={(props) => <PermissionTable props={props} />}
+        />
+      </Switch>
+    </Router>
   );
 }
 
