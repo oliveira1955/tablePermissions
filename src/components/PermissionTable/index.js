@@ -121,6 +121,7 @@ function PermissionTable() {
               (property) => (
                 <th scope="col" key={property}>
                   <input
+                    id="clickAll"
                     type="checkbox"
                     checked={areAllChecked(property)}
                     onChange={(e) =>

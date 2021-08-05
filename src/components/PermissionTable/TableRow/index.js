@@ -19,6 +19,7 @@ function TableRow({
       <th onClick={handleOpenSubRow}>{header}</th>
       <th scope="col">
         <input
+          id="clickViewListing"
           type="checkbox"
           checked={!subRow.find((d) => !d.viewListing)}
           onChange={(e) => handleChanges(e.target.checked, "viewListing")}
@@ -26,6 +27,7 @@ function TableRow({
       </th>
       <th scope="col">
         <input
+          id="clickViewDetails"
           type="checkbox"
           checked={!subRow.find((d) => !d.viewDetails)}
           onChange={(e) => handleChanges(e.target.checked, "viewDetails")}
@@ -33,6 +35,7 @@ function TableRow({
       </th>
       <th scope="col">
         <input
+          id="clickCreate"
           type="checkbox"
           checked={!subRow.find((d) => !d.create)}
           onChange={(e) => handleChanges(e.target.checked, "create")}
@@ -40,6 +43,7 @@ function TableRow({
       </th>
       <th scope="col">
         <input
+          id="clickEdit"
           type="checkbox"
           checked={!subRow.find((d) => !d.edit)}
           onChange={(e) => handleChanges(e.target.checked, "edit")}
@@ -47,6 +51,7 @@ function TableRow({
       </th>
       <th scope="col">
         <input
+          id="clickDelete"
           type="checkbox"
           checked={!subRow.find((d) => !d.delete)}
           onChange={(e) => handleChanges(e.target.checked, "delete")}
