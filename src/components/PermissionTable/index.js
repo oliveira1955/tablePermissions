@@ -1,4 +1,5 @@
 import React, { useState, useCallback, useEffect } from "react";
+import styles from "./style.css";
 
 import TableRow from "./TableRow";
 import TableSubRow from "./TableSubRow";
@@ -104,8 +105,8 @@ function PermissionTable() {
   return (
     <div className="container">
       <table className="table table-bordered">
-        <thead>
-          <tr>
+        <thead id="header">
+          <tr id={"columnsName"}>
             <th scope="col"></th>
             <th scope="col">Ver Listagem</th>
             <th scope="col">Ver Detalhes</th>
@@ -115,12 +116,13 @@ function PermissionTable() {
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr id="AllColumns">
             <th>Todos</th>
             {["viewListing", "viewDetails", "create", "edit", "delete"].map(
               (property) => (
-                <th scope="col" key={property}>
+                <th scope="col" key={property} id="clickAllColumn">
                   <input
+                    id="clickAll"
                     type="checkbox"
                     checked={areAllChecked(property)}
                     onChange={(e) =>

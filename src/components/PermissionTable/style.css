@@ -1,0 +1,48 @@
+#columnsName th {
+    text-align: center;
+    padding-top: 55px;
+    border: hidden !important;
+}
+
+.table{
+    border: hidden;
+}
+
+#clickAllColumn{
+    text-align: center;
+    border: hidden;
+}
+
+#AllColumns{
+    background-color: lightgray;
+    border: hidden;
+}
+
+#modulesRow{
+    background-color: #dcdcdc85;
+    border: hidden;
+}
+
+#subRow{
+    border: hidden;
+}
+
+#modulesColumnsViewListing, #modulesColumnsViewDetails, #modulesColumnsCreat, #modulesColumnsEdit, #modulesColumnsDelete{
+    text-align: center;
+    border: hidden;
+}
+
+#subColumnsViewListing, #subColumnsViewDetails, #subColumnsCreate, #subColumnsEdit, #subColumnsDelete{
+    text-align: center;
+    border: hidden;
+}
+
+button.btn.btn-primary.btn-sm.float-right.my-3 {
+    margin: 0px 40%;
+    width: 210px;
+    font-size: 20px;
+    border: hidden;
+    border-radius: 20px;
+    background-color: gray;
+    border-color: gray;
+}
